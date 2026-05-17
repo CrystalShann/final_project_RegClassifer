@@ -25,7 +25,7 @@ The two towers' GAP features are concatenated and passed through a 2-layer MLP h
 
 **Can deep learning models trained on DNA sequence and histone modifications classify regulatory elements in primary human tissue?**
 
-DeepRegFinder (Ramakrishnan et al. 2024, *Bioinformatics Advances*) established a five-class chromatin-rule scheme for regulatory annotation but relies on hand-crafted feature combinations and predefined chromatin-state grammars. The question here is whether a fused sequence + chromatin CNN, trained end-to-end, can recover the same five-class structure directly from raw signal in primary human stomach tissue — a tissue context where consolidated reference data is sparser and class balance is harsher than in well-studied immortalised cell lines like K562 or GM12878.
+The question here is whether a fused sequence + chromatin CNN, trained end-to-end, can recover the same five-class structure directly from raw signal in primary human stomach tissue — a tissue context where consolidated reference data is sparser and class balance is harsher than in well-studied immortalised cell lines like K562 or GM12878.
 
 ## Hypothesis
 
