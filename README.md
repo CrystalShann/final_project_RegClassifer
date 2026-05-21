@@ -6,13 +6,13 @@ A deep-learning classifier that predicts the regulatory role of any 2 kb genomic
 
 Each 2 kb window is assigned to one of five mutually exclusive regulatory classes:
 
-| Code | Class | Biology | TSS overlap | H3K4me3 | H3K4me1 | H3K27ac | H3K27me3 | DNase |
-|---|---|---|---|---|---|---|---|---|
-| AT | 3 | Active TSS / active promoter | required | required | any | required | excluded | required |
-| PT | 2 | Poised / bivalent TSS | required | required | any | any | required | any |
-| AE | 1 | Active enhancer | excluded | any | required | required | any | required |
-| PE | 0 | Poised / primed enhancer | excluded | any | required | excluded | any | any |
-| BG | 4 | Background | — | — | — | — | — | — |
+| Code | Class | Biology                      | TSS overlap | H3K4me3      | H3K4me1      | H3K27ac      | H3K27me3     | DNase        |
+| ---- | ----- | ---------------------------- | ----------- | ------------ | ------------ | ------------ | ------------ | ------------ |
+| AT   | 3     | Active TSS / active promoter | required    | required     | excluded     | required     | excluded     | required     |
+| PT   | 2     | Poised / bivalent TSS        | required    | required     | excluded     | excluded     | required     | any          |
+| AE   | 1     | Active enhancer              | excluded    | any          | required     | required     | any          | required     |
+| PE   | 0     | Poised / primed enhancer     | excluded    | any          | required     | excluded     | required     | any          |
+| BG   | 4     | Background                   | —           | any / absent | any / absent | any / absent | any / absent | any / absent |
 
 The architecture combines two modalities:
 
